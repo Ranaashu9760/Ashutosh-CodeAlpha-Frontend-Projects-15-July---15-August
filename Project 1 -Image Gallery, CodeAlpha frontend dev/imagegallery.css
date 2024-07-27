@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    /* light gray background color */
+    color: #333;
+    /* dark gray foreground color */
+}
+
+.gallery-container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    /* white background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 20%;
+    /* changed to 20% to cover 85% of the page */
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    /* added to ensure images fit within the container */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.full-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #faf9f9;
+    /* dark gray background color for second page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-image {
+    width: 65vw;
+    height: 65vh;
+    margin: 10vh 10vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; /* Add this to scale the image to fit the container */
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+.nav-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-btn {
+    background-color: #333;
+    /* dark gray button background color */
+    color: #fff;
+    /* white button foreground color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+    /* dark gray button hover background color */
+}
